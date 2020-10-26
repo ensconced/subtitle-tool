@@ -31,9 +31,12 @@ function MyDropzone() {
     >
       <input {...getInputProps()} />
       {isDragActive ? (
-        <p>Drop the files here ...</p>
+        <p>Drop the file here ...</p>
       ) : (
-        <p>Drag 'n' drop some files here, or click to select files</p>
+        <>
+          <p>Drag 'n' drop your .srt file here, or click to select a file</p>
+          <p>only supports .srt files!</p>
+        </>
       )}
     </div>
   );
