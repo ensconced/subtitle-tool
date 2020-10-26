@@ -68,6 +68,6 @@ function serializeSections(sections) {
     .join("\n\n");
 }
 
-module.exports = function convert(inputStr) {
+export default function convert(inputStr) {
   return serializeSections(getSections(inputStr));
-};
+}
